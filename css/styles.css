@@ -7,6 +7,26 @@
   --accent-color: #2196f3;
 }
 
+h1,h2,h3,h4,p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 .list {
   list-style: none;
 }
@@ -37,6 +57,14 @@ body {
   font-family: var(--primary-font);
   color: var(--primary-font-color);
 }
+
+.container { 
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 /* =========/Components========= */
 
 /* =========Header */
@@ -58,16 +86,13 @@ body {
   color: var(--accent-color);
 }
 
-.menu-link:visited {
-  color: ;
-}
-
 .contact-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-right: 50px;
 }
 
 .contact-mail:hover,
@@ -81,6 +106,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  
 }
 .contact-phone:hover,
 .contact-phone:focus,
@@ -88,17 +114,72 @@ body {
   color: var(--accent-color);
 }
 
+.header-container {
+  display: flex; 
+  align-items: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.menu,
+.contacts-list {
+  display: flex;
+}
+
+.menu {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.list-menu {
+  padding-top: 32px;
+}
+
 /* ========/Header======== */
 
 /* ================Main*/
 
+.section-hero {
+  width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+  background: #2F303A;
+  text-align: center;
+  display: column;
+}
+
 .hero {
+  color: #FFFFFF;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 200px;
 }
+
 
 .modal-btn {
   font-weight: 700;
@@ -106,14 +187,17 @@ body {
   line-height: 1.88;
   color: #ffffff;
   background-color: #188ce8;
-  cursor: pointer;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 200px;
 }
 
 .modal-btn:active {
   background-color: #188ce8;
 }
-
-/* Hover focus для кнопки? */
 
 /* ===========Section benefits */
 
@@ -126,11 +210,21 @@ body {
 }
 
 .benefits-subtitle {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-top: 10px;
+}
+
+.benefits-list {
+  display: flex;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+.benefits-item {
+  flex-basis: calc((100% - 60px)/3);
 }
 /* ===========/Section Benefits============ */
 
@@ -140,17 +234,34 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-item {
+  flex-basis: calc((100% - 60px)/3);
 }
 
 /* =============/Section About us========= */
 
 /* ==============Section Our team */
 
+.our-team {
+  background: #F5F4FA;
+}
+
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .team-title {
@@ -161,14 +272,35 @@ body {
 }
 
 .team-subtitle {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.our-team-item {
+  flex-basis: calc((100% - 90px)/4);
+}
+
+.team-card-wrapper {
+  width: 270px;
+  background-color: #FFFFFF;;
+  border-bottom: #FFFFFF;
+  border-left: #FFFFFF;
+  border-right: #FFFFFF;
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+
 /* =============/Section Our team=========== */
+
 /* ==========/Main========== */
 
 /* ==========Footer */
@@ -193,7 +325,6 @@ body {
 }
 
 .footer-mail {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -202,7 +333,6 @@ body {
 }
 
 .footer-phone {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -221,11 +351,34 @@ body {
 .footer-mail:active {
   color: var(--accent-color);
 }
+
+.footer {
+  display: column; 
+}
+
+.footer-logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer-adress-wrapper {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
 /* =======/Footer======== */
 
 /* ===========Page 2 (Portfolio) */
 
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .filter-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left:22px;
+  padding-right: 22px;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -233,6 +386,8 @@ body {
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   cursor: pointer;
+  border-radius: 4px;
+  border: none;
 }
 
 .filter-btn:hover,
@@ -240,6 +395,17 @@ body {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+
+.filter-btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-list:not(:last-child) {
+  margin-right: 8px;
+}
+
+ 
 
 .portfolio-title {
   font-weight: 700;
@@ -254,3 +420,33 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 180px)/9);
+}
+
+.portfolio-card-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;;
+
+}
+
+
