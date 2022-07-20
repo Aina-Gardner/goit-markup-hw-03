@@ -120,7 +120,7 @@ body {
 }
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0px;
 }
 
 .menu,
@@ -159,13 +159,11 @@ body {
 /* ================Main*/
 
 .section-hero {
-  width: 1600px;
-height: 600px;
-left: 0px;
-top: 80px;
   background: #2F303A;
   text-align: center;
   display: column;
+  padding-top: 200px;
+  
 }
 
 .hero {
@@ -176,22 +174,21 @@ top: 80px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   align-items: center;
-  margin-bottom: 30px;
-  padding-top: 200px;
 }
 
 
 .modal-btn {
+width: 200px;
+height: 50px;
+left: 700px;
+top: 430px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   color: #ffffff;
   background-color: #188ce8;
   border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+  margin-top: 30px;
   margin-bottom: 200px;
 }
 
@@ -241,6 +238,8 @@ top: 80px;
 .about-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 94px;
+  gap: 30px;
 }
 
 .about-item {
@@ -269,6 +268,9 @@ top: 80px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .team-subtitle {
@@ -276,16 +278,18 @@ top: 80px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+
 }
 
 .our-team-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 } 
 
-.our-team-item {
-  flex-basis: calc((100% - 90px)/4);
-}
 
 .team-card-wrapper {
   width: 270px;
@@ -294,8 +298,7 @@ top: 80px;
   border-left: #FFFFFF;
   border-right: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 94px;
   
 }
 
@@ -316,6 +319,7 @@ top: 80px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 
 .address:hover,
@@ -330,6 +334,7 @@ top: 80px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
+  margin-bottom: 9px;
 }
 
 .footer-phone {
@@ -338,6 +343,7 @@ top: 80px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
+  margin-bottom: 60px;
 }
 
 .footer-phone:hover,
@@ -353,17 +359,19 @@ top: 80px;
 }
 
 .footer {
-  display: column; 
+  display: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  
 }
 
 .footer-adress-wrapper {
-  padding-top: 20px;
-  padding-bottom: 60px;
+  margin-bottom: 0px;
+
 }
 
 /* =======/Footer======== */
@@ -425,7 +433,8 @@ top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
+  gap: 8px;
 }
 
 .portfolio-list {
