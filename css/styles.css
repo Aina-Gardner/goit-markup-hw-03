@@ -128,10 +128,10 @@ body {
   display: flex;
 }
 
-.menu {
+/* .menu {
   padding-top: 32px;
   padding-bottom: 32px;
-}
+} */
 
 .logo {
   margin-right: 93px;
@@ -215,7 +215,7 @@ top: 430px;
 
 .benefits-list {
   display: flex;
-  padding-top: 30px;
+  padding-top: 0px;
   gap: 30px;
 }
 
@@ -251,6 +251,7 @@ top: 430px;
 
 .our-team {
   background: #F5F4FA;
+  padding-bottom: 94px;
 }
 
 .our-team-title {
@@ -297,8 +298,6 @@ top: 430px;
   border-left: #FFFFFF;
   border-right: #FFFFFF;
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 94px;
-  
 }
 
 /* =============/Section Our team=========== */
@@ -333,7 +332,6 @@ top: 430px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
-  margin-bottom: 9px;
 }
 
 .footer-phone {
@@ -342,7 +340,6 @@ top: 430px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
-  margin-bottom: 60px;
 }
 
 .footer-phone:hover,
@@ -368,10 +365,19 @@ top: 430px;
   
 }
 
+.footer-adress {
+  margin-bottom: 9px;
+}
+
 .footer-adress-wrapper {
   margin-bottom: 0px;
 
 }
+
+.footer-contact-mail {
+  margin-bottom: 9px;
+}
+
 
 /* =======/Footer======== */
 
