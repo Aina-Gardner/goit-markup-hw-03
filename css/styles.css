@@ -120,7 +120,7 @@ body {
 }
 .section {
   padding-top: 94px;
-  padding-bottom: 0px;
+  padding-bottom: 94px;
 }
 
 .menu,
@@ -278,7 +278,6 @@ top: 430px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-bottom: 30px;
   text-align: center;
   padding-bottom: 30px;
 
@@ -446,7 +445,6 @@ top: 430px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
 }
 
 .portfolio-item {
